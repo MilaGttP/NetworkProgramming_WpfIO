@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="#212121">
     <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="StartBtn" Click="StartBtn_Click" Content="Start"  Width="100" Height="30" Margin="10"/>
+            <TextBlock x:Name="TB" Width="350" Foreground="Azure"/>
+        </StackPanel>
 
     </Grid>
 </Window>
