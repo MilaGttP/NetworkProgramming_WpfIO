@@ -46,9 +46,9 @@ namespace NetworkProgramming_WpfIO
                         TB.Text = Encoding.Unicode.GetString(buffer, 0, l);
                     } while (l > 0);
                 }
-                else Console.WriteLine("Error");
+                else MessageBox.Show("Error");
             }
-            catch (SocketException ex) { Console.WriteLine(ex.Message); }
+            catch (SocketException ex) { MessageBox.Show(ex.Message); }
             finally
             {
                 socket.Shutdown(SocketShutdown.Both);
