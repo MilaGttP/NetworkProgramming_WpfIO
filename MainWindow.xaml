@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="#212121">
     <Grid>
-
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="Start1Btn" Click="Start1Btn_Click"  Content="Start 1 task"  Width="100" Height="30" Margin="10"/>
+            <Button x:Name="Start2Btn" Click="Start2Btn_Click"  Content="Start 2 task"  Width="100" Height="30" Margin="10"/>
+            <TextBlock x:Name="TB" Width="450" Foreground="Azure"/>
+        </StackPanel>
     </Grid>
 </Window>
