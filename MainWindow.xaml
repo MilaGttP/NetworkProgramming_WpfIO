@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="#212121">
     <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Width" Value="150"/>
+                    <Setter Property="Height" Value="50"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="Task1Btn" Content="Task 1" Click="Task1Btn_Click"/>
+            <Button x:Name="Task2Btn" Content="Task 2" Click="Task2Btn_Click"/>
+            <Button x:Name="Task3Btn" Content="Task 3" Click="Task3Btn_Click"/>
+            <Button x:Name="Task4Btn" Content="Task 4" Click="Task4Btn_Click"/>
+            <Button x:Name="Task5Btn" Content="Task 5" Click="Task5Btn_Click"/>
 
+        </StackPanel>
     </Grid>
 </Window>
