@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="#212121">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <TextBox x:Name="txtMessage" Margin="20"/>
+        <StackPanel Grid.Row="1">
+            <TextBox x:Name="txtFrom" Margin="10"/>
+            <TextBox x:Name="txtTo" Margin="10"/>
+
+        </StackPanel>
+
+        <Button Grid.Column="1" x:Name="SendBtn" Content="Send" Click="SendBtn_Click" Margin="20"/>
     </Grid>
 </Window>
